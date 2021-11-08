@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: msSale
+
+server:
+  port: 8787

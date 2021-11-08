@@ -1,0 +1,28 @@
+POST http://localhost:8743/v1/api/sale/save
+Content-Type: application/json
+
+{
+  "productId": 2,
+  "customerId": 4,
+  "quantity": 20,
+  "status": true
+}
+
+###
+
+POST http://localhost:8181/ms-sale/v1/api/sale/save
+Content-Type: application/json
+
+{
+  "productId": 3,
+  "customerId": 5,
+  "quantity": 10,
+  "status": true
+}
+
+###
+
+#GET http://localhost:8181/ms-sale/v1/api/sale?customerId=4
+#Accept: application/json
+
+###
