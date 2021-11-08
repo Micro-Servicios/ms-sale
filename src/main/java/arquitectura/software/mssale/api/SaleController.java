@@ -26,6 +26,11 @@ public class SaleController {
     }
 
 
+    @GetMapping()
+    public List<Sale> get(@RequestParam(value = "idCustomer") Integer idCustomer)  {
+        return saleRepository.getObjectsCollection(idCustomer);
+    }
+
     /*@RequestMapping( method = RequestMethod.GET)
     public Sale getCustomer(@RequestParam Integer customerId) throws Exception {
         Optional<Sale> customerOptional =saleRepository.findById(customerId);

@@ -22,7 +22,13 @@ Content-Type: application/json
 
 ###
 
-#GET http://localhost:8181/ms-sale/v1/api/sale?customerId=4
-#Accept: application/json
+GET http://localhost:8743/v1/api/sale?idCustomer=4
+Accept: application/json
+
+###
+
+
+GET http://localhost:8181/ms-sale/v1/api/sale?idCustomer=5
+Accept: application/json
 
 ###
