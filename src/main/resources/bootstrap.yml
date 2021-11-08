@@ -4,4 +4,4 @@ spring:
   cloud:
     config:
       uri: http://localhost:8889
-      name: "sale"
+      name: "ms-sale"
