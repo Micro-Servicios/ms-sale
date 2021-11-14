@@ -2,8 +2,8 @@ POST http://localhost:8743/v1/api/sale/save
 Content-Type: application/json
 
 {
-  "productId": 2,
-  "customerId": 2,
+  "productId": 1,
+  "customerId": 1,
   "quantity": 20,
   "status": true
 }
@@ -15,7 +15,7 @@ Content-Type: application/json
 
 {
   "productId": 1,
-  "customerId": 2,
+  "customerId": 1,
   "quantity": 10,
   "status": true
 }
