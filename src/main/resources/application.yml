@@ -3,4 +3,10 @@ spring:
     name: msSale
 
 server:
-  port: 8787
+  port: ${SERVER_PORT:8743}
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8762/eureka}
