@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -47,6 +48,18 @@ public class SaleController {
         }
         else {
             throw new Exception("No existe el usuario");
+        }
+    }
+
+    @DeleteMapping()
+    public String deleteByCustomerId(@RequestParam(value = "customerId") Integer customerId) {
+        //saleRepository.deleteAllById(customerId);
+
+        Integer val=saleRepository.deleteAllByCustomerId(customerId);
+        if (val>0){
+            return "Se elimino los productos del usuario: "+customerId;
+        }else{
+            return "No se elimino los productos del usuario: "+customerId;
         }
     }
 

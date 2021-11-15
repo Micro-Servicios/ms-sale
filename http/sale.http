@@ -15,20 +15,31 @@ Content-Type: application/json
 
 {
   "productId": 1,
-  "customerId": 1,
+  "customerId": 2,
   "quantity": 10,
   "status": true
 }
 
 ###
 
-GET http://localhost:8743/v1/api/sale?idCustomer=2
+GET http://localhost:8743/v1/api/sale?idCustomer=1
 Accept: application/json
 
 ###
 
 
 GET http://localhost:8181/ms-sale/v1/api/sale?idCustomer=5
+Accept: application/json
+
+###
+
+
+DELETE http://localhost:8743/v1/api/sale?customerId=1
+Accept: application/json
+
+###
+
+DELETE http://localhost:8181/ms-sale/v1/api/sale?customerId=1
 Accept: application/json
 
 ###
