@@ -10,6 +10,7 @@ COPY ${DEPENDENCY}/BOOT-INF/classes /app
 
 ENV SERVER_PORT 8743
 ENV EUREKA_URI "http://localhost:8762/eureka"
+ENV URI_CONFIG "http://localhost:8889"
 
 ENTRYPOINT ["java", \
             "-cp", \
